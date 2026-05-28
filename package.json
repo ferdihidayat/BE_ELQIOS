@@ -31,6 +31,8 @@
     "nodemailer": "^7.0.3",
     "qrcode": "^1.5.4",
     "speakeasy": "^2.0.0",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1",
     "uuid": "^11.1.0",
     "xendit-node": "^7.0.0"
   },

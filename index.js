@@ -210,9 +210,16 @@ app.post('/getpaymentstatus20260204', (req, res) => {
 });
 
 
+// Swagger API Documentation
+const { swaggerUi, swaggerSpec } = require('./swagger.js');
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
+  customCss: '.swagger-ui .topbar { display: none }',
+  customSiteTitle: 'ELQIOS API Documentation'
+}));
+
 // Endpoint GET
 app.get('/', (req, res) => {
-  res.send('404');
+  res.redirect('/api-docs');
 });
 
 // Endpoint GET
